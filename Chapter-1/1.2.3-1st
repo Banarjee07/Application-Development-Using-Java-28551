@@ -25,3 +25,12 @@ s.GetData();
 s.Display();
 }
 }
+
+
+
+Output:
+Roll is : 96002
+Name is : Tahsin
+Mark is : 85.25
+
+=== Code Execution Successful ===
