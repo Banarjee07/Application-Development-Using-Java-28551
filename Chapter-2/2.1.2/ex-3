@@ -1,0 +1,24 @@
+public class NumberClassifier {
+    public static void main(String[] args) {
+        classifyNumber(7);
+        classifyNumber(-3);
+        classifyNumber(0);
+    }
+
+    public static void classifyNumber(int number) {
+        if(number>0){
+            System.out.println(number+" is positive.");
+        }
+        else if (number<0){
+            System.out.println(number+" is negative.");
+        } 
+        else {
+            System.out.println(number+" is zero.");
+        }
+    }
+}
+
+Output:
+7 is positive.
+-3 is negative.
+0 is zero.
