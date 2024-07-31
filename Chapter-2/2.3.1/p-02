@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class AddMethodJava {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter 1st number: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter 2nd number: ");
+        int num2 = input.nextInt();
+
+        // Create a Calculator object using the constructor
+        Calculator calculator = new Calculator(num1, num2);
+
+        // Call the method to perform the addition and get the result
+        int addition = calculator.addNumbers();
+        System.out.println("The sum is: " + addition);
+    }
+}
+class Calculator {
+    private int num1;
+    private int num2;
+
+    // Constructor to initialize the numbers
+    public Calculator(int num1, int num2) {
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+
+    // Method to add the numbers
+    public int addNumbers() {
+        return num1 + num2;
+    }
+}
+
+
+Output:
+Enter 1st number: 10
+Enter 2nd number: 20
+The sum is: 30
+
+=== Code Execution Successful ===
