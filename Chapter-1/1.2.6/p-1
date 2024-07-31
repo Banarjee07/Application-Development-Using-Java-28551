@@ -1,0 +1,21 @@
+class Student {
+    int roll = 10;         
+    String name = "Banarjee"; 
+
+    void show() {
+        System.out.print(roll + "\n" + name);
+    }
+}
+
+class Test {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.show();
+    }
+}
+
+
+
+Output:
+10
+Banarjee
