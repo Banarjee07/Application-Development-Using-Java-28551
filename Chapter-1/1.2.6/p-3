@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Triangle {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner (System.in);
+        System.out.print("Enter 1st number: ");
+        int a= sc.nextInt();
+        System.out.print("Enter 2nd number: ");
+        int b= sc.nextInt();
+        System.out.print("Enter 3rd number: ");
+        int c= sc.nextInt();
+        
+        if(((a+b)>c) && ((b+c)>a) && ((c+a)>b) )
+        {
+            int s= (a+b+c)/2;
+            double area= Math.sqrt(s*(s-a)*(s-b)*(s-c));
+            System.out.print("Triangle Area is: "+area);
+        }
+        else 
+        {
+            System.out.print("Triangle is not possible");
+        }
+
+    }
+}
+
+
+Output:
+Enter 1st number: 5
+Enter 2nd number: 7
+Enter 3rd number: 6
+Triangle Area is: 14.696938456699069
