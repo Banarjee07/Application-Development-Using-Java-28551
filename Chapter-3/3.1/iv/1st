@@ -1,0 +1,29 @@
+class Calculator
+{
+    int add(int x, int y)
+    {
+        return x + y;
+    }
+    
+    int add(int a, int b, int c)
+    {
+        return a + b + c;
+    }
+}
+
+// Separate class with main method
+public class StaticPoly
+{
+    public static void main(String[] args)
+    {
+        Calculator obj = new Calculator();
+        System.out.println(obj.add(10, 20));    
+        System.out.println(obj.add(10, 20, 30)); 
+    }
+}
+
+
+
+Output:
+30
+60
