@@ -1,0 +1,40 @@
+interface Student
+{
+static final int Roll=1740;	//static final member
+ static final String Name="Shuvo"; 	//static final member
+void Display( );	//Interface method decleared
+}
+class Result implements Student
+{
+public float Mark;
+public void Display()	//Interface method defined
+{
+System.out.println("Roll is : "+Roll);
+System.out.println("Name is :"+Name);
+}
+public void GetMark()	//own method defined
+{
+Mark=65.45f;
+}
+public void ShowMark()	//own method defined
+{
+System.out.println("Mark is :"+Mark);
+}
+}
+public class interf
+{
+public static void main(String args[])
+{
+Result R=new Result();
+R.Display();
+R.GetMark();
+R.ShowMark();
+}
+}
+
+
+
+Output:
+Roll is : 1740
+Name is :Shuvo
+Mark is :65.45
