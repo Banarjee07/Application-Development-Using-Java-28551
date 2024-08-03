@@ -1,0 +1,49 @@
+public class StringConstructors {
+    public static void main(String[] args) {
+        // Corrected character array initialization
+        char[] charArray = {'H', 'I', ' ', 'T', 'O', 'U', 'H', 'I', 'D'};
+        
+        // Corrected byte array initialization
+        byte[] ascii = {65, 66, 67, 68, 70, 71, 73};
+        
+        // Creating strings using different constructors
+        String str = "Welcome";
+        String str1 = new String("Java");
+        String str2 = new String(charArray);
+        String str3 = new String(charArray, 3, 3); // Starts at index 3 and takes 3 characters
+        String str4 = new String(ascii); // Converts byte array to string (using default charset)
+        String str5 = new String(ascii, 2, 3); // Starts at index 2 and takes 3 bytes
+        
+        // Creating an empty string
+        String str6 = new String();
+        
+        // Creating a string from another string
+        String str7 = new String(str);
+        
+        // Printing all the strings
+        System.out.println("str : " + str);
+        System.out.println("str1 : " + str1);
+        System.out.println("str2 : " + str2);
+        System.out.println("str3 : " + str3);
+        System.out.println("str4 : " + str4);
+        System.out.println("str5 : " + str5);
+        System.out.println("str6 : " + str6);
+        System.out.println("str7 : " + str7);
+        
+        // Concatenating strings
+        str += " Tutor Touhid";
+        System.out.println("str : " + str);
+    }
+}
+
+
+Output:
+str : Welcome
+str1 : Java
+str2 : HI TOUHID
+str3 : TOU
+str4 : ABCDFGI
+str5 : CDF
+str6 : 
+str7 : Welcome
+str : Welcome Tutor Touhid
