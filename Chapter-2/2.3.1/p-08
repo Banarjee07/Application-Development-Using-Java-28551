@@ -1,0 +1,25 @@
+class Student{
+	int Roll;
+	String Name;
+	float Mark;
+	public Student(){
+		Roll = 4089;
+		Name = "Banarjee";
+		Mark = 60.56f;
+		System.out.println("Roll is : "+Roll);
+		System.out.println("Name is : "+Name);
+		System.out.println("Mark is : "+Mark);
+	}
+}
+
+public class construct {
+	public static void main(String[] args) {
+		Student s = new Student();
+	}
+}
+
+
+Output:
+Roll is : 4089
+Name is : Banarjee
+Mark is : 60.56
