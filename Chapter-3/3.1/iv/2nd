@@ -1,0 +1,28 @@
+class ABC{
+	public void result()
+	{
+	int a = 20; int b = 10;
+	int c;
+	c = a + b;
+	System.out.println ("Result is = " + c);
+	}
+	}
+
+	public class XYZ extends ABC{
+	public void result(){
+	int a = 20; int b = 10;
+	int c;
+	c = a-b;
+	System.out.println("Result is="+c);
+	}
+
+	public static void main(String args[]){
+	ABC obj = new XYZ();
+	obj.result();
+	}
+	}
+
+
+
+Output:
+Result is=10
