@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class SwapxJava {
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	int a, b, temp ;
+	System.out.println("Enter the A:  ");
+	a = input.nextInt();
+	System.out.println("Enter the B:  ");
+	b = input.nextInt();
+	temp = a ;
+	a = b ;
+	b = temp ;
+	System.out.println("A = "+a);
+	System.out.println("B = "+b);
+	}
+}
+
+
+Output:
+Enter the A:  
+10
+Enter the B:  
+12
+A = 12
+B = 10
