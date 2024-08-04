@@ -1,0 +1,18 @@
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class TextFieldExample {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame(“Text Field Example”);
+
+		JTextField textField = new JTextField();
+		textField.setBounds(50, 50, 150, 20); // †U·U wd‡ìi Ae¯’vb Ges AvKvi †mU Ki“b|
+
+		frame.add(textField);
+
+		frame.setSize(300, 200);
+		frame.setLayout(null);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
