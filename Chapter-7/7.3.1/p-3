@@ -6,7 +6,7 @@ public class LabelExample {
 		JFrame frame = new JFrame("Label Example");
 
 		JLabel label = new JLabel("This is a label");
-		label.setBounds(50, 50, 150, 20); // †j‡e‡ji Ae¯’vb Ges AvKvi †mU Ki‡Z n‡e|
+		label.setBounds(50, 50, 150, 20); 
 
 		frame.add(label);
 		
