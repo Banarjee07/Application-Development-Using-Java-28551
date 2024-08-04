@@ -1,0 +1,18 @@
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class LabelExample {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("Label Example");
+
+		JLabel label = new JLabel("This is a label");
+		label.setBounds(50, 50, 150, 20); // †j‡e‡ji Ae¯’vb Ges AvKvi †mU Ki‡Z n‡e|
+
+		frame.add(label);
+		
+		frame.setSize(300, 200);
+		frame.setLayout(null);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
