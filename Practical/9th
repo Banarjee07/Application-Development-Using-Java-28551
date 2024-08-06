@@ -1,0 +1,32 @@
+import java.sql.Connection; 
+import java.sql.DriverManager; 
+import java.sql.SQLException; 
+import java.sql.Statement; 
+
+public 
+
+class UpdateUser { 
+	public static void main(String[] args) throws SQLException { 
+		// Database connection details 
+			String url = "jdbc:mysql://localhost:3306/your_database_name"; 
+			String username = "your_username"; 
+			String password = "your_password"; 
+			
+		// Connect to the database 
+			Connection connection = DriverManager.getConnection(url, username, password); 
+		// Update the user name 
+			String sql = "UPDATE users SET name = 'new_name' WHERE id = 1;"; 
+			Statement statement = connection.createStatement(); 
+		int rowsAffected = statement.executeUpdate(sql); 
+
+		// Check if the query was successful 
+		if (rowsAffected > 0) { 
+					System.out.println("User name updated successfully!"); 
+			} else { 
+				System.out.println("User name update failed!"); 
+			} 
+		// Close the statement and connection 
+			statement.close(); 
+			connection.close(); 
+	} 
+}
