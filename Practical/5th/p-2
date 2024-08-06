@@ -1,0 +1,72 @@
+import java.time.LocalDate;
+
+class Person {
+    private String name;
+    private String address;
+    private LocalDate birthDate;
+
+    // Constructor to initialize the instance variables
+    public Person(String name, String address, LocalDate birthDate) {
+        this.name = name;
+        this.address = address;
+        this.birthDate = birthDate;
+    }
+
+    // Method to check if the birth date is valid
+    public boolean isBirthDateValid() {
+        LocalDate today = LocalDate.now(); // Get the current date
+        return birthDate.isBefore(today); // Check if the birth date is before today's date
+    }
+
+    // Getters for the instance variables (optional, but useful for accessing private fields)
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
+
+    // Setters for the instance variables (optional, but useful for modifying private fields)
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a birth date (example date: January 1, 2000)
+        LocalDate birthDate = LocalDate.of(2000, 1, 1);
+
+        // Create a Person instance
+        Person person = new Person("John Doe", "123 Main St", birthDate);
+
+        // Check if the birth date is valid
+        boolean isValid = person.isBirthDateValid();
+        System.out.println("Is birth date valid? " + isValid);
+
+        // Print out the person's details
+        System.out.println("Name: " + person.getName());
+        System.out.println("Address: " + person.getAddress());
+        System.out.println("Birth Date: " + person.getBirthDate());
+    }
+}
+
+
+Output:
+Is birth date valid? true
+Name: John Doe
+Address: 123 Main St
+Birth Date: 2000-01-01
