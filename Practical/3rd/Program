@@ -1,0 +1,55 @@
+// Package declaration
+package wahidullah.rajo;
+
+// Define an interface named Student
+public interface Student {
+    // Constants for Roll and Name
+    static final int Roll = 8404;
+    static final String Name = "Wahid";
+    
+    // Abstract method Display
+    void Display();
+}
+
+// Class Result implements the Student interface
+class Result implements Student {
+    // Instance variable for Mark
+    public float Mark;
+    
+    // Override the Display method from the Student interface
+    @Override
+    public void Display() {
+        System.out.println("Roll is: " + Roll);
+        System.out.println("Name is: " + Name);
+    }
+    
+    // Method to set the Mark value
+    public void Getmark() {
+        Mark = 65.45f;
+    }
+    
+    // Method to display the Mark value
+    public void ShowMark() {
+        System.out.println("Mark is: " + Mark);
+    }
+}
+
+// Main class interf
+public class interf {
+    public static void main(String[] args) {
+        // Create an instance of Result
+        Result R = new Result();
+        
+        // Call methods on the Result instance
+        R.Display();
+        R.Getmark();
+        R.ShowMark();
+    }
+}
+
+
+Output:
+Roll is: 8404
+Name is: Wahid
+Mark is: 65.45
+
