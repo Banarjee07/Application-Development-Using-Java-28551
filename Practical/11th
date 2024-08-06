@@ -1,0 +1,25 @@
+
+Connection connection = DriverManager.getConnection(url, username, password); 
+
+String searchTerm = "keyword"; 
+String sql = "SELECT * FROM your_table WHERE name LIKE '%" + searchTerm + "%'"; 
+
+
+Statement statement = connection.createStatement(); 
+ResultSet resultSet = statement.executeQuery(sql); 
+
+
+DefaultTableModel tableModel = new DefaultTableModel(); 
+tableModel.addColumn("ID"); 
+tableModel.addColumn("Name"); 
+
+while (resultSet.next()) { 
+	int id = resultSet.getInt("id"); 
+		String name = resultSet.getString("name"); 
+		Object[] data = {id, name}; 
+		tableModel.addRow(data); 
+} 
+
+JTable table = new JTable(tableModel); 
+JScrollPane scrollPane = new JScrollPane(table);
+add(scrollPane);
