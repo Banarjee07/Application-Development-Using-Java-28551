@@ -1,0 +1,13 @@
+public class DataValidation { 
+	
+	public static void main(String[] args) { 
+		String name = "Mohammed Ali";
+		if (name.length() > 10) { 
+			System.out.println("The name cannot exceed 10 characters"); 
+		} 
+	} 
+}
+
+
+Output:
+The name cannot exceed 10 characters
